@@ -1,0 +1,3 @@
+import { Link } from 'react-router-dom'
+import { money } from '../utils/helpers'
+export function ProductCard({ product }) { return <article className="product-card"><Link to={`/products/${product.id}`}><img src={product.image || 'https://placehold.co/600x450?text=Product'} alt={product.name} /><div className="product-card-copy"><h3>{product.name}</h3><p>{product.description}</p><div><strong>{money(product.price)}</strong><span>{product.stock ? `${product.stock} in stock` : 'Out of stock'}</span></div></div></Link></article> }

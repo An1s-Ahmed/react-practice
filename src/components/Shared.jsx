@@ -1,0 +1,1 @@
+export function ErrorText({ children }) { return children ? <p className="error" role="alert">{children}</p> : null }

@@ -1,0 +1,2 @@
+import { money } from '../utils/helpers'
+export function OrderSummary({ subtotal, children }) { return <aside className="order-summary"><h2>Order summary</h2>{children}<div className="summary-total"><span>Total</span><strong>{money(subtotal)}</strong></div></aside> }

@@ -1,0 +1,1 @@
+export function Footer() { return <footer className="site-footer"><div className="container footer-inner"><span>fieldstore</span><span>Simple goods for everyday living.</span></div></footer> }
